@@ -15,7 +15,7 @@ import { Book } from './models';
 import {
   BooksApiActions,
   FindBookPageActions,
-} from './actions';
+} from '../actions';
 import { GoogleBooksService } from '../../core/services';
 
 /**

@@ -4,9 +4,9 @@ import {
   Action,
   combineReducers,
 } from '@ngrx/store';
-import * as fromRoot from '../reducers';
-import * as fromAuth from '../../auth/reducers/auth.reducer';
-import * as fromLoginPage from '../../auth/reducers/login-page.reducer';
+import * as fromRoot from '../../reducers';
+import * as fromAuth from './auth.reducer';
+import * as fromLoginPage from './login-page.reducer';
 
 export const authFeatureKey = 'auth';
 

@@ -5,8 +5,8 @@ import { Observable, of } from 'rxjs';
 import { catchError, filter, map, switchMap, take, tap } from 'rxjs/operators';
 
 import { GoogleBooksService } from '../../core/services';
-import { BookActions } from './actions';
-import * as fromBooks from './reducers';
+import { BookActions } from '../actions';
+import * as fromBooks from '../reducers';
 
 /**
  * Guards are hooks into the route resolution process, providing an opportunity

@@ -8,7 +8,7 @@ import {
   LoginPageActions,
   AuthActions,
   AuthApiActions,
-} from './actions';
+} from '../actions';
 import { Credentials } from '../models';
 import { AuthService } from '../services';
 import { LogoutConfirmationDialogComponent } from '../components';
