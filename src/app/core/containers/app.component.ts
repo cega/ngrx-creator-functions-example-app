@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 // import { AuthActions } from '@example-app/auth/actions';
 // import * as fromAuth from '@example-app/auth/reducers';
 import * as fromRoot from '../../reducers';
-// import { LayoutActions } from '@example-app/core/actions';
+import { LayoutActions } from '../actions';
 
 @Component({
   selector: 'bc-app',
@@ -56,7 +56,7 @@ export class AppComponent {
      * tree to the provided selector
      */
     this.showSidenav$ = this.store.select(fromRoot.selectShowSidenav);
-    this.loggedIn$ = this.store.select(fromAuth.selectLoggedIn);
+    // this.loggedIn$ = this.store.select(fromAuth.selectLoggedIn);
   }
 
   closeSidenav() {
@@ -74,6 +74,6 @@ export class AppComponent {
   }
 
   logout() {
-    this.store.dispatch(AuthActions.logoutConfirmation());
+  //  this.store.dispatch(AuthActions.logoutConfirmation());
   }
 }
