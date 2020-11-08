@@ -1,15 +1,30 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
+import { HttpClientModule } from "@angular/common/http";
+
+import { StoreModule } from "@ngrx/store";
+import { EffectsModule } from "@ngrx/effects";
+import { StoreRouterConnectingModule, RouterState } from "@ngrx/router-store";
+import { StoreDevtoolsModule } from "@ngrx/store-devtools";
+
+import { CoreModule } from "./core";
+
+import { AppComponent } from "./app.component";
 
 @NgModule({
-  imports: [BrowserModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    CoreModule
+  ],
   declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
-
 
 /*
 Use of this source code is governed by an MIT-style license that
