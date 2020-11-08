@@ -7,7 +7,7 @@ import { LoginPageComponent } from './containers';
 import {
   LoginFormComponent,
   LogoutConfirmationDialogComponent,
-} from './auth/components';
+} from './components';
 
 import { AuthEffects } from './effects';
 import * as fromAuth from './reducers';

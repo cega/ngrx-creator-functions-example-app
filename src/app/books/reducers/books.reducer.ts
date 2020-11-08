@@ -6,8 +6,8 @@ import {
   BooksApiActions,
   CollectionApiActions,
   ViewBookPageActions,
-} from '@example-app/books/actions';
-import { Book } from '@example-app/books/models';
+} from '../actions';
+import { Book } from '../models';
 
 export const booksFeatureKey = 'books';
 

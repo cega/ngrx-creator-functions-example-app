@@ -4,25 +4,25 @@ import { NgModule } from '@angular/core';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 
-import { BooksRoutingModule } from '@example-app/books/books-routing.module';
+import { BooksRoutingModule } from './books-routing.module';
 import {
   BookAuthorsComponent,
   BookDetailComponent,
   BookPreviewComponent,
   BookPreviewListComponent,
   BookSearchComponent,
-} from '@example-app/books/components';
+} from './components';
 import {
   CollectionPageComponent,
   FindBookPageComponent,
   SelectedBookPageComponent,
   ViewBookPageComponent,
-} from '@example-app/books/containers';
-import { BookEffects, CollectionEffects } from '@example-app/books/effects';
+} from './containers';
+import { BookEffects, CollectionEffects } from './effects';
 
-import * as fromBooks from '@example-app/books/reducers';
-import { MaterialModule } from '@example-app/material';
-import { PipesModule } from '@example-app/shared/pipes';
+import * as fromBooks from '../reducers';
+import { MaterialModule } from '../../material';
+import { PipesModule } from '../../shared/pipes';
 
 export const COMPONENTS = [
   BookAuthorsComponent,

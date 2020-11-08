@@ -1,14 +1,14 @@
-import { Book } from '@example-app/books/models';
+import { Book } from './models';
 import {
   createSelector,
   createFeatureSelector,
   combineReducers,
   Action,
 } from '@ngrx/store';
-import * as fromSearch from '@example-app/books/reducers/search.reducer';
-import * as fromBooks from '@example-app/books/reducers/books.reducer';
-import * as fromCollection from '@example-app/books/reducers/collection.reducer';
-import * as fromRoot from '@example-app/reducers';
+import * as fromSearch from './reducers/search.reducer';
+import * as fromBooks from './reducers/books.reducer';
+import * as fromCollection from './reducers/collection.reducer';
+import * as fromRoot from '../reducers';
 
 export const booksFeatureKey = 'books';
 

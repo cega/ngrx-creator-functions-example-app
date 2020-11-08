@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
-// import { AuthActions } from '@example-app/auth/actions';
-// import * as fromAuth from '@example-app/auth/reducers';
+import { AuthActions } from './auth/actions';
+import * as fromAuth from './auth/reducers';
 import * as fromRoot from '../../reducers';
 import { LayoutActions } from '../actions';
 
@@ -56,7 +56,7 @@ export class AppComponent {
      * tree to the provided selector
      */
     this.showSidenav$ = this.store.select(fromRoot.selectShowSidenav);
-    // this.loggedIn$ = this.store.select(fromAuth.selectLoggedIn);
+    this.loggedIn$ = this.store.select(fromAuth.selectLoggedIn);
   }
 
   closeSidenav() {
@@ -74,6 +74,6 @@ export class AppComponent {
   }
 
   logout() {
-  //  this.store.dispatch(AuthActions.logoutConfirmation());
+   this.store.dispatch(AuthActions.logoutConfirmation());
   }
 }

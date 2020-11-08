@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { LogoutConfirmationDialogComponent } from '@example-app/auth/components';
-import { MaterialModule } from '@example-app/material';
+import { MaterialModule } from '../../material';
 
 describe('Logout Confirmation Dialog', () => {
   let fixture: ComponentFixture<LogoutConfirmationDialogComponent>;
