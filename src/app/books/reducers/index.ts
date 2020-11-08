@@ -1,4 +1,4 @@
-import { Book } from './models';
+import { Book } from '../models';
 import {
   createSelector,
   createFeatureSelector,
