@@ -4,9 +4,9 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { take } from 'rxjs/operators';
 
-import { FindBookPageActions } from '@example-app/books/actions';
-import { Book } from '@example-app/books/models';
-import * as fromBooks from '@example-app/books/reducers';
+import { FindBookPageActions } from '../actions';
+import { Book } from '../models';
+import * as fromBooks from '../reducers';
 
 @Component({
   selector: 'bc-find-book-page',

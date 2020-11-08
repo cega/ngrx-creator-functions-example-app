@@ -1,2 +1,2 @@
 export * from './app.component';
-export * from './not-found-page.component';
+export * from '../containers/not-found-page.component';

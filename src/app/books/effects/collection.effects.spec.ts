@@ -4,9 +4,9 @@ import {
   CollectionApiActions,
   CollectionPageActions,
   SelectedBookPageActions,
-} from '@example-app/books/actions';
-import { CollectionEffects } from '@example-app/books/effects';
-import { Book } from '@example-app/books/models';
+} from '../actions';
+import { CollectionEffects } from '../effects';
+import { Book } from '../models';
 import {
   BookStorageService,
   LOCAL_STORAGE_TOKEN,

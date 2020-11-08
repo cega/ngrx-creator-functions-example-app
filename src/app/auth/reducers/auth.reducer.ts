@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { AuthApiActions, AuthActions } from '../../auth/actions';
+import { AuthApiActions, AuthActions } from '../actions';
 import { User } from './models';
 
 export const statusFeatureKey = 'status';

@@ -4,7 +4,7 @@ import {
   CollectionApiActions,
   CollectionPageActions,
   SelectedBookPageActions,
-} from '@example-app/books/actions';
+} from '../actions';
 
 export const collectionFeatureKey = 'collection';
 
