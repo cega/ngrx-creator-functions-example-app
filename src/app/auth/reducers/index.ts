@@ -20,7 +20,7 @@ export interface State extends fromRoot.State {
 }
 
 export function reducers(state: AuthState | undefined, action: Action) {
-  console.log(action);
+  // console.log(action);
   return combineReducers({
     [fromAuth.statusFeatureKey]: fromAuth.reducer,
     [fromLoginPage.loginPageFeatureKey]: fromLoginPage.reducer,
