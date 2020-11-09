@@ -12,7 +12,6 @@ export class RouterEffects {
     () =>
       this.router.events.pipe(
         filter((event) => event instanceof NavigationEnd),
-        // tap((e) => console.log(this.activatedRoute, e)),
         map(() => {
           let route = this.activatedRoute;
           while (route.firstChild) route = route.firstChild;
