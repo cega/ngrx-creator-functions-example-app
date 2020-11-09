@@ -8,7 +8,7 @@ import {
 import * as fromSearch from './search.reducer';
 import * as fromBooks from './books.reducer';
 import * as fromCollection from './collection.reducer';
-import * as fromRoot from '../reducers';
+import * as fromRoot from '../../reducers';
 
 export const booksFeatureKey = 'books';
 

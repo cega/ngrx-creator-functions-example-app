@@ -48,7 +48,7 @@ import { AppComponent } from './core/containers';
     /**
      * @ngrx/router-store keeps router state up-to-date in the store.
      */
-/    StoreRouterConnectingModule.forRoot(),
+    StoreRouterConnectingModule.forRoot(),
 
     /**
      * Store devtools instrument the store retaining past versions of state

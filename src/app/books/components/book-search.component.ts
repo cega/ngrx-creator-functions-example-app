@@ -7,17 +7,11 @@ import { Component, Output, Input, EventEmitter } from '@angular/core';
       <mat-card-title>Find a Book</mat-card-title>
       <mat-card-content>
         <mat-form-field>
-          <!--input
-            matInput
-            placeholder="Search for a book"
-            [value]="query"
-            (keyup)="search.emit($event.target.value)"
-          -->
           <input
             matInput
             placeholder="Search for a book"
             [value]="query"
-            (keyup)="emitValue($event)"
+            (keyup)="search.emit($event.target.value)"
           >
         </mat-form-field>
         <mat-spinner
@@ -69,8 +63,4 @@ export class BookSearchComponent {
   @Input() error = '';
   @Output() search = new EventEmitter<string>();
 
-  public emitValue(e) {
-    // console.log(e);
-    this.search.emit(e.key);
-  }
 }

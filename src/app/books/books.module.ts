@@ -20,7 +20,7 @@ import {
 } from './containers';
 import { BookEffects, CollectionEffects } from './effects';
 
-import * as fromBooks from '../reducers';
+import * as fromBooks from './reducers';
 import { MaterialModule } from '../material';
 import { PipesModule } from '../shared/pipes';
 
